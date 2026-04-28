@@ -1,3 +1,6 @@
+import math
+
+
 def somar(a, b):
     return a + b
 
@@ -18,6 +21,12 @@ def dividir(a, b):
 
 def potencia(base, expoente):
     return base ** expoente
+
+
+def raiz_quadrada(x):
+    if x < 0:
+        raise ValueError("NÃ£o Ã© possÃ­vel calcular raiz quadrada de nÃºmero negativo")
+    return math.sqrt(x)
 
 
 def fatorial(n):

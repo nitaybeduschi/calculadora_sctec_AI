@@ -1,14 +1,16 @@
 # Exemplo Git
 
-Repositório de exemplo para aulas de Git e workflows com agentes de IA. Implementa uma calculadora simples em Python.
+Repositorio de exemplo para aulas de Git e workflows com agentes de IA. Implementa uma calculadora simples em Python.
 
-## Operações disponíveis
+## Operacoes disponiveis
 
 - `somar(a, b)`
 - `subtrair(a, b)`
 - `multiplicar(a, b)`
-- `dividir(a, b)` — lança `ValueError` ao dividir por zero
+- `dividir(a, b)` - lanca `ValueError` ao dividir por zero
 - `potencia(base, expoente)`
+- `raiz_quadrada(x)` - lanca `ValueError` se `x < 0`
+- `fatorial(n)` - lanca `ValueError` para numero negativo
 
 ## Como executar
 

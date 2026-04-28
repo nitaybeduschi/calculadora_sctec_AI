@@ -1,6 +1,14 @@
 import pytest
 
-from src.calculadora import dividir, fatorial, multiplicar, potencia, somar, subtrair
+from src.calculadora import (
+    dividir,
+    fatorial,
+    multiplicar,
+    potencia,
+    raiz_quadrada,
+    somar,
+    subtrair,
+)
 
 
 def test_somar():
@@ -33,6 +41,16 @@ def test_potencia():
     assert potencia(2, 8) == 256
     assert potencia(5, 0) == 1
     assert potencia(2, -1) == 0.5
+
+
+def test_raiz_quadrada():
+    assert raiz_quadrada(0) == 0
+    assert raiz_quadrada(9) == 3
+
+
+def test_raiz_quadrada_negativa():
+    with pytest.raises(ValueError):
+        raiz_quadrada(-1)
 
 
 def test_fatorial_caso_base():
