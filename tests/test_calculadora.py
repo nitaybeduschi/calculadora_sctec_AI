@@ -1,6 +1,7 @@
 import pytest
 
 from src.calculadora import (
+    celsius_para_fahrenheit,
     dividir,
     fatorial,
     multiplicar,
@@ -64,3 +65,15 @@ def test_fatorial_recursivo():
 def test_fatorial_negativo():
     with pytest.raises(ValueError):
         fatorial(-1)
+
+
+def test_celsius_para_fahrenheit_caminho_feliz():
+    assert celsius_para_fahrenheit(25) == 77
+
+
+def test_celsius_para_fahrenheit_zero_grau():
+    assert celsius_para_fahrenheit(0) == 32
+
+
+def test_celsius_para_fahrenheit_temperatura_negativa():
+    assert celsius_para_fahrenheit(-10) == 14

@@ -1,4 +1,5 @@
 from src.calculadora import (
+    celsius_para_fahrenheit,
     dividir,
     fatorial,
     multiplicar,
@@ -18,6 +19,7 @@ def main():
     print(f"2 ^ 8 = {potencia(2, 8)}")
     print(f"sqrt(9) = {raiz_quadrada(9)}")
     print(f"5! = {fatorial(5)}")
+    print(f"25°C = {celsius_para_fahrenheit(25)}°F")
 
 
 if __name__ == "__main__":
